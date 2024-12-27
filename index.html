@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('portada1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .button-area {
+            position: absolute;
+            width: 155px; /* Ajusta según el tamaño del reloj */
+            height: 155px; /* Ajusta según el tamaño del reloj */
+            top: 53%; /* Centrar verticalmente */
+            left: 49%; /* Centrar horizontalmente */
+            transform: translate(-50%, -50%); /* Alinear perfectamente */
+            cursor: pointer;
+            border-radius: 50%; /* Hacerlo circular */
+            border: 2px solid transparent; /* Opcional: Agrega un borde para depuración */
+            background-color: rgba(255, 255, 255, 0.1); /* Transparente */
+        }
+
+        .button-area:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Un poco más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <!-- Área del botón -->
+    <div class="button-area" onclick="irCalculadora()"></div>
+
+    <script>
+        function irCalculadora() {
+            // Cambia a la página de la calculadora
+            window.location.href = 'CalculadoraReloxieira.html'; // Asegúrate de tener este archivo en tu proyecto
+        }
+    </script>
+</body>
+</html>
